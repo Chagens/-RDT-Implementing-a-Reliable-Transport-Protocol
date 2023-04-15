@@ -43,6 +43,11 @@ struct pkt
     char payload[20];
 };
 
+
+
+/********* STUDENTS WRITE THE NEXT SEVEN ROUTINES *********/
+
+/* called from layer 5, passed the data to be sent to other side */
 struct send{
     int base;
     int nextseq;
@@ -67,11 +72,6 @@ int get_checksum(struct pkt *packet){
     }
     return check;
 }
-
-/********* STUDENTS WRITE THE NEXT SEVEN ROUTINES *********/
-
-/* called from layer 5, passed the data to be sent to other side */
-
 
 A_output(message) struct msg message;
 {
